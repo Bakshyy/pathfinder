@@ -4,63 +4,109 @@
 
 body {
   margin: 0;
-  background: #111827;
-  color: white;
-  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .app {
   min-height: 100vh;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
   text-align: center;
-  padding: 2rem;
+  margin-bottom: 24px;
 }
 
-h1 {
-  margin-bottom: 0.5rem;
+.header h1 {
+  margin: 0;
+  font-size: 42px;
+  letter-spacing: 1px;
 }
 
-.status {
-  color: #9ca3af;
-  margin-bottom: 2rem;
+.header p {
+  margin-top: 8px;
+  color: #94a3b8;
+}
+
+.status-card,
+.telemetry-card {
+  width: 100%;
+  max-width: 360px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 18px;
+  padding: 18px;
+  margin-bottom: 24px;
+}
+
+.status-label {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.status-text {
+  margin: 8px 0 0;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .control-pad {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 18px;
+  margin-bottom: 28px;
 }
 
 .middle-row {
   display: flex;
-  gap: 1.5rem;
+  gap: 18px;
 }
 
-.btn {
-  width: 110px;
-  height: 80px;
+.control-button {
+  width: 96px;
+  height: 78px;
   border: none;
-  border-radius: 16px;
-  font-size: 2rem;
-  font-weight: bold;
-  cursor: pointer;
+  border-radius: 18px;
   background: #2563eb;
   color: white;
+  font-size: 34px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
 }
 
-.btn:active {
-  transform: scale(0.95);
+.control-button:active {
+  transform: scale(0.96);
 }
 
 .stop {
   background: #dc2626;
-  font-size: 1.2rem;
+  font-size: 18px;
 }
 
-.telemetry-card {
-  margin: 2rem auto 0;
-  padding: 1rem;
-  max-width: 320px;
-  background: #1f2937;
-  border-radius: 16px;
+.telemetry-card h2 {
+  margin: 0 0 16px;
+  font-size: 22px;
+}
+
+.telemetry-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-top: 1px solid #334155;
+}
+
+.telemetry-row span {
+  color: #94a3b8;
+}
+
+.telemetry-row strong {
+  font-size: 20px;
 }

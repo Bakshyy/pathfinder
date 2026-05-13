@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #111827;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+}
+
+.status {
+  color: #9ca3af;
+  margin-bottom: 2rem;
+}
+
+.control-pad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.middle-row {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.btn {
+  width: 110px;
+  height: 80px;
+  border: none;
+  border-radius: 16px;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.stop {
+  background: #dc2626;
+  font-size: 1.2rem;
+}
+
+.telemetry-card {
+  margin: 2rem auto 0;
+  padding: 1rem;
+  max-width: 320px;
+  background: #1f2937;
+  border-radius: 16px;
+}

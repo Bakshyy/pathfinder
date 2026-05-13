@@ -24,6 +24,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'cmd_vel_publisher = pathfinder_control.cmd_vel_publisher:main',
+            'cmd_vel_listener = pathfinder_control.cmd_vel_listener:main',
         ],
     },
 )
